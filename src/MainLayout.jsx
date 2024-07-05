@@ -1,3 +1,4 @@
+import NewestReleases from "./components/Content/NewestReleases"
 import Banner from "./components/Header/Banner"
 import Navbar from "./components/Header/Navbar"
 
@@ -6,6 +7,7 @@ const MainLayout = () => {
         <>
             <Navbar />
             <Banner />
+            <NewestReleases />
         </>
     )
 }

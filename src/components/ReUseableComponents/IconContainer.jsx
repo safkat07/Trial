@@ -1,7 +1,8 @@
+import { cn } from "@/lib/utils"
 
-const IconContainer = ({ iconName }) => {
+const IconContainer = ({ iconName, className }) => {
     return (
-        <button className='text-lg   p-3.5 rounded-full bg-neutral-600'>
+        <button className={cn('text-lg   p-3.5 rounded-full bg-neutral-600', className)}>
             {iconName}
         </button>
     )

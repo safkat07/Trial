@@ -1,5 +1,6 @@
 import logoicon from '../../assets/logo.webp'
-import { CiMenuFries } from "react-icons/ci";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+
 import { FaUser } from "react-icons/fa6";
 import { LuCrown } from "react-icons/lu";
 
@@ -8,15 +9,15 @@ import PrimaryButton from '../ReUseableComponents/PrimaryButton';
 
 const Navbar = () => {
     return (
-        <nav className='text-white top-3.5 fixed inset-x-0 '>
+        <nav className='text-white top-3.5 fixed z-50 inset-x-0 '>
             <MaxContentWrapper className={"flex justify-between items-center"}>
                 <div className='flex gap-x-7 items-center '>
-                    <div className='flex items-center gap-1'>
+                    <div className='flex cursor-pointer items-center gap-1'>
                         <img className='w-12' src={logoicon} alt="" />
                         <p className='text-4xl font-semibold'>Holaa</p>
                     </div>
-                    <span className='border p-2  rounded-full'>
-                        <CiMenuFries className='rotate-180 text-2xl  inline-block ' />
+                    <span className='border p-1.5 cursor-pointer  rounded-full'>
+                        <HiOutlineMenuAlt1 className=' text-2xl  inline-block ' />
                     </span>
                 </div>
 

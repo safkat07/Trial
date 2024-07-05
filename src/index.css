@@ -17,7 +17,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  @apply font-mainFont
+  @apply font-mainFont bg-[#101010]
 }
 
 
