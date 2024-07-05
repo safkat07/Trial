@@ -3,7 +3,7 @@ import MaxContentWrapper from '../ReUseableComponents/MaxContentWrapper'
 
 const NewestReleases = () => {
     return (
-        <div className='text-white text-5xl'>
+        <div className='text-white text-5xl py-10'>
             <MaxContentWrapper>
                 NewestReleases
             </MaxContentWrapper>

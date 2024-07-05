@@ -62,7 +62,7 @@ const Banner = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='flex absolute gap-x-24 right-10 text-white'>
+                        <div className='flex absolute gap-x-20 right-10 text-white'>
                             <div>
                                 <div className='text-left'>
                                     <p className='uppercase font-semibold text-9xl leading-none inline-block tracking-tight'>
@@ -80,8 +80,8 @@ const Banner = () => {
                                     <PrimaryButton className={"bg-none border border-neutral-600 text-neutral-400"} btnIcon={<IoPlay />} btntitle={"Add to list"} />
                                 </div>
                             </div>
-                            <div>
-                                <div className='flex flex-col gap-y-2.5 text-white'>
+                            <div className=''>
+                                <div className='flex flex-col gap-y-2.5 text-white bg-[#131212] px-2 py-3.5 rounded-full'>
                                     <IconContainer iconName={<GoHome />} />
                                     <IconContainer iconName={<GoHome />} />
                                     <IconContainer iconName={<GoHome />} />
