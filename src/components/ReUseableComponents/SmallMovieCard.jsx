@@ -5,7 +5,7 @@ const SmallMovieCard = ({ movieTitle, movieRating, movieHours, moviePoster, movi
     return (
         <div className='w-full text-center cursor-pointer  h-full mx-auto'>
             <div className='w-full'>
-                <img className='size-[420px] object-cover object-top mx-auto rounded-[3.5rem]  border-2 border-neutral-400' src={moviePoster} alt="" />
+                <img className=' object-cover object-top mx-auto rounded-[3.5rem] ' src={moviePoster} alt="" />
             </div>
             <div className='space-y-1.5 text-neutral-200'>
                 <p className='text-2xl uppercase pt-5 font-medium tracking-tighter'>{movieTitle}</p>

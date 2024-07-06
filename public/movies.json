@@ -1,0 +1,34 @@
+[
+    {
+        "movieTitle": "Samelill sronle",
+        "movieRating": 9.5,
+        "movieHours": "02h 30m",
+        "moviePoster": "/src/assets/img1.png",
+        "movieGenre": "Action, Comedy",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "The family monky",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/img2.png",
+        "movieGenre": "Action, Comedy",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "Chiefly universes",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/img3.png",
+        "movieGenre": "Comedy, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/img4.png",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    }
+]

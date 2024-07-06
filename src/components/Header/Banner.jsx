@@ -1,4 +1,5 @@
-import img1 from '../../assets/lord2.jpeg';
+import { useEffect, useState } from 'react';
+import img1 from '../../assets/bannerImage.png';
 import MaxContentWrapper from '../ReUseableComponents/MaxContentWrapper';
 import { GoHome } from "react-icons/go";
 import IconContainer from '../ReUseableComponents/IconContainer';
@@ -7,52 +8,22 @@ import { IoMdStar } from "react-icons/io";
 import { IoPlay } from "react-icons/io5";
 import PrimaryButton from '../ReUseableComponents/PrimaryButton';
 import SmallMovieCard from '../ReUseableComponents/SmallMovieCard';
-import inception from '../../assets/inception.jpg';
-import shawshnk from '../../assets/shawshank.jpg';
-import dark from '../../assets/darknit.jpg';
-import tenet from '../../assets/tene.jpg';
-
-const movies = [
-    {
-        movieTitle: "Inception",
-        movieRating: 8.8,
-        movieHours: "02h 28m",
-        moviePoster: inception,
-        movieGenre: "Action, Sci-Fi",
-        movieQuality: "4K"
-    },
-    {
-        movieTitle: "Shawshank Redemption",
-        movieRating: 9.3,
-        movieHours: "2h 22m",
-        moviePoster: shawshnk,
-        movieGenre: "Drama, Action",
-        movieQuality: "4K"
-    },
-    {
-        movieTitle: "The Dark Knight",
-        movieRating: 9.2,
-        movieHours: "2h 32m",
-        moviePoster: dark,
-        movieGenre: "Crime, Drama",
-        movieQuality: "HD"
-    },
-    {
-        movieTitle: "Tenet",
-        movieRating: 8.8,
-        movieHours: "2h 58m",
-        moviePoster: tenet,
-        movieGenre: "Action, Adventure",
-        movieQuality: "4K"
-    }
-];
 
 const Banner = () => {
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        fetch('/movies.json')
+            .then(response => response.json())
+            .then(data => setMovies(data))
+            .catch(error => console.error('Error fetching movies:', error));
+    }, []);
+
     return (
         <div className='h-full'>
-            <div className='relative h-[80vh]'>
-                <img className='object-cover w-full h-full' src={img1} alt="The Lord of the Rings" />
-                <div className='absolute inset-0 bg-black bg-opacity-50'>
+            <div className='relative h-screen'>
+                <img className='object-cover object-top w-full h-full' src={img1} alt="The Lord of the Rings" />
+                <div className='absolute inset-0 '>
                     <MaxContentWrapper className="flex justify-between items-center h-full">
                         <div className='absolute text-white bottom-28'>
                             <p className='text-4xl'>01<span className='text-neutral-500 py-44'>/05</span></p>
@@ -98,7 +69,7 @@ const Banner = () => {
 
             {/* movie list */}
             <MaxContentWrapper className={"py-10"}>
-                <div className='bg-[#181818] relative  -mt-20 rounded-[3rem] e'>
+                <div className='bg-[#181818] relative -mt-20 rounded-[3rem]'>
                     <div className="relative -top-10">
                         <div className='grid grid-cols-4 px-32 mx-auto justify-center items-center gap-x-10'>
                             {movies.map((movie, index) => (
@@ -110,6 +81,6 @@ const Banner = () => {
             </MaxContentWrapper>
         </div>
     );
-}
+};
 
 export default Banner;

@@ -1,0 +1,74 @@
+[
+    {
+        "movieTitle": "Samelill sronle",
+        "movieRating": 9.5,
+        "movieHours": "02h 30m",
+        "moviePoster": "/src/assets/newRelease3.png",
+        "movieGenre": "Action, Comedy",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "The family monky",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/newRelease2.png",
+        "movieGenre": "Action, Comedy",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release2.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release3.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release4.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release5.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release6.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release7.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    },
+    {
+        "movieTitle": "World war 02",
+        "movieRating": 9.5,
+        "movieHours": "2h 30m",
+        "moviePoster": "/src/assets/release8.jpg",
+        "movieGenre": "Action, Crime",
+        "movieQuality": "4K"
+    }
+]
