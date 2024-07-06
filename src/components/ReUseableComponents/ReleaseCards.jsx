@@ -26,7 +26,8 @@ const ReleaseCards = ({ movieTitle, movieRating, movieHours, moviePoster, movieG
                         ))
                     }
                 </div>
-                <div className="absolute  left-1/2 top-1/2 text-5xl opacity-0 group-hover:opacity-100 transition-all duration-500">
+
+                <div className="backdrop-blur-md flex justify-center items-center text-2xl rounded-full bg-white/20 mx-auto  overflow-hidden size-20 absolute left-0 right-0 top-[40%] opacity-0 group-hover:opacity-100  transition-all duration-500">
                     <FaPlay />
                 </div>
 
