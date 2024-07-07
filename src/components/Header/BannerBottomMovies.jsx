@@ -4,7 +4,7 @@ import SmallMovieCard from '../ReUseableComponents/SmallMovieCard';
 import useMovieList from '@/Hooks/UseMovieList';
 
 const BannerBottomMovies = () => {
-    const [movies, error, loading] = useMovieList()
+    const [movies, loading] = useMovieList()
     return (
         <div className='bg-[#181818] relative -mt-20 rounded-[3rem]'>
 
