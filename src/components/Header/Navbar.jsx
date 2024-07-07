@@ -1,15 +1,28 @@
 import logoicon from '../../assets/logo.webp'
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
-
 import { FaUser } from "react-icons/fa6";
 import { LuCrown } from "react-icons/lu";
 
 import MaxContentWrapper from '../ReUseableComponents/MaxContentWrapper'
 import PrimaryButton from '../ReUseableComponents/PrimaryButton';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Navbar = () => {
+    const [scrollY, setScrollY] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    console.log(scrollY);
     return (
-        <nav className='text-white top-3.5 fixed z-50 inset-x-0 '>
+        <nav className={`text-white top-3.5 fixed z-50 inset-x-0 transition-all duration-500 ${scrollY && "bg-[#181818] top-0 py-2.5"}`}>
             <MaxContentWrapper className={"flex justify-between items-center"}>
                 <div className='flex gap-x-7 items-center '>
                     <div className='flex cursor-pointer items-center gap-1'>
