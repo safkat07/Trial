@@ -21,7 +21,7 @@ const Banner = () => {
     return (
         <div className='h-full'>
             <div className='relative h-screen'>
-                <img className='object-cover object-top w-full h-full' src={img1} alt="The Lord of the Rings" />
+                <img className='object-cover object-top size-full' src={img1} alt="The Lord of the Rings" />
                 <div className='absolute inset-0'>
                     <MaxContentWrapper className="flex justify-between items-center h-full">
                         <div className='absolute text-white bottom-28'>
@@ -30,7 +30,7 @@ const Banner = () => {
                         </div>
                         <div className='flex absolute gap-x-20 right-10 text-white'>
                             <div>
-                                <p className='uppercase font-semibold xl:text-9xl text-5xl leading-none tracking-tight'>
+                                <p className='uppercase font-semibold text-9xl leading-none tracking-tight'>
                                     The Lord <br /> of the Rings
                                 </p>
                                 <div className='flex items-center gap-2.5 mt-5'>
@@ -46,6 +46,7 @@ const Banner = () => {
                                     <PrimaryButton className="bg-none border border-neutral-600 text-neutral-400 text-sm px-7 py-5" btnIcon={<IoPlay />} btntitle="Add to list" />
                                 </div>
                             </div>
+
                             <BannerIcons />
                         </div>
                     </MaxContentWrapper>

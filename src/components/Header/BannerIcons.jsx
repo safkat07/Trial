@@ -8,19 +8,20 @@ import { GoHome } from "react-icons/go";
 import IconContainer from "../ReUseableComponents/IconContainer";
 
 const iconsData = [
-    { title: "Home", icon: <GoHome /> },
-    { title: "Search", icon: <CiSearch /> },
-    { title: "Video", icon: <IoVideocamOutline /> },
-    { title: "Add to Playlist", icon: <RiMenuFold2Fill /> },
-    { title: "Monitor", icon: <PiMonitor /> },
-    { title: "Gamepad", icon: <TbDeviceGamepad2 /> },
-    { title: "Football", icon: <IoAmericanFootball /> }
+    { id: 1, title: "Home", icon: <GoHome /> },
+    { id: 2, title: "Search", icon: <CiSearch /> },
+    { id: 3, title: "Video", icon: <IoVideocamOutline /> },
+    { id: 4, title: "Add to Playlist", icon: <RiMenuFold2Fill /> },
+    { id: 5, title: "Monitor", icon: <PiMonitor /> },
+    { id: 6, title: "Gamepad", icon: <TbDeviceGamepad2 /> },
+    { id: 7, title: "Football", icon: <IoAmericanFootball /> }
 ];
+
 const BannerIcons = () => {
     return (
-        <div className='flex flex-col gap-y-2.5 text-white'>
-            {iconsData.map((icon, index) => (
-                <IconContainer key={index} iconTitle={icon.title} iconName={icon.icon} />
+        <div className='flex flex-col space-y-2.5  text-white'>
+            {iconsData.map((icon,) => (
+                <IconContainer key={icon.id} iconTitle={icon.title} iconName={icon.icon} />
             ))}
         </div>
     )

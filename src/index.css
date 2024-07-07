@@ -102,5 +102,5 @@ img {
 }
 
 .PrimaryHoverEffect {
-  @apply bg-gradient-to-r hover:via-[#FE3889] hover:from-orange-700 hover:to-[#9817E3]
+  @apply bg-gradient-to-r hover:via-[#FE3889] hover:from-orange-700 hover:to-[#9817E3] transition-all duration-500
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
     }, []);
     console.log(scrollY);
     return (
-        <nav className={`text-white top-3.5 fixed z-50 inset-x-0 transition-all duration-500 ${scrollY && "bg-[#181818] top-0 py-2.5"}`}>
+        <nav className={`text-white py-3.5 fixed z-50 w-full transition-all duration-500 ${scrollY && "bg-[#181818] "}`}>
             <MaxContentWrapper className={"flex justify-between items-center"}>
                 <div className='flex gap-x-7 items-center '>
                     <div className='flex cursor-pointer items-center gap-1'>
